@@ -1,0 +1,6 @@
+.app {
+  border-radius: 6px;
+  display: inline-block;
+  padding: 5px;
+  box-shadow: 0 0 5px rgb(48, 29, 155);
+}

@@ -1,0 +1,52 @@
+.style-head {
+  border-radius: 6px;
+  display: inline-block;
+  padding: 5px;
+  box-shadow: 0 0 5px rgb(48, 29, 155);
+}
+
+.style-me {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 35px;
+}
+
+.style-nails {
+  border-radius: 20px;
+  width: 33%;
+}
+
+.style-right {
+  margin: 7% 10%;
+  width: 13%;
+}
+
+.style-char {
+  height: 118px;
+  width: 33%;
+  border-radius: 20px;
+}
+
+@media all and (max-width: 650px) {
+  .style-nails {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .style-right {
+    margin: 30px auto;
+    width: 20%;
+    rotate: 90deg;
+    display: block;
+  }
+
+  .style-char {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+  }
+}

@@ -1,0 +1,20 @@
+.style-head {
+  border-radius: 6px;
+  display: inline-block;
+  padding: 5px;
+  box-shadow: 0 0 5px rgb(48, 29, 155);
+}
+
+.left-list {
+  font-size: 15px;
+  text-align: left;
+  display: inline-block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.right-list {
+  font-size: 15px;
+  text-align: left;
+  display: inline-block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
