@@ -29,9 +29,8 @@ const Layout = () => {
       </div>
 
       <div className="text-center">
-        <p>*strona dostosowana dla użytkowników telefonów</p>
+        <p><strong>*strona dostosowana dla użytkowników telefonów</strong></p>
       </div>
-
     </>
   )
 };
