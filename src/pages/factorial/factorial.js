@@ -7,12 +7,12 @@ function Factorial() {
     let result = 1;
 
     if (numer === '' || isNaN(numer)) {
-      document.getElementById('result').innerHTML = 'To nie liczba';
+      document.getElementById('result').innerHTML = 'To nie jest liczba!';
       return;
     }
 
     if (numer < 0) {
-      document.getElementById('result').innerHTML = 'Wartość nie może być poniżej zera';
+      document.getElementById('result').innerHTML = 'Wartość nie może być poniżej zera!';
       return;
     }
 
@@ -34,7 +34,7 @@ function Factorial() {
       <input type="text" id='number' onChange={() => clearResult()} />
       <br/>
       <input className="calculation-button" type="button" value="Policz" onClick={() => clickedCalculation()} />
-      <div id='result'></div>
+      <div id='result' className='calculation-result'></div>
     </div>
   );
 }
