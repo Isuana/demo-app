@@ -1,3 +1,14 @@
+# Demo Aplication
+Portfolio to present my skills in React by `using create-react-app`
+In this aplication I have example usage of React Library for calculation and user events
+
+## Applications
+* factorial
+
+## Too Do
+* fibonacii
+* shopping list
+
 ### `npm start`
 
 Runs the app in the development mode.\
