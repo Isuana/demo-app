@@ -29,11 +29,12 @@ function Factorial() {
   }
 
   return (
-    <div className="Factorial">
-      <h3>Liczenie silni</h3> 
+    <div>
+      <h3 className='style-head'>Liczenie silni</h3>
+      <br />
       <input type="text" id='number' onChange={() => clearResult()} />
-      <br/>
-      <input className="calculation-button" type="button" value="Policz" onClick={() => clickedCalculation()} />
+      <br />
+      <input type="button" value="Policz" className="calculation-button" onClick={() => clickedCalculation()} />
       <div id='result' className='calculation-result'></div>
     </div>
   );
