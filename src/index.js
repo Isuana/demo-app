@@ -5,7 +5,7 @@ import './index.css';
 import Layout from './pages/layout';
 import Home from './pages/home/home';
 import AboutMe from './pages/about_me/about_me';
-import FirstApp from './pages/first_app/first_app';
+import ShoppingList from './pages/shopping_list/shopping_list';
 import Factorial from './pages/factorial/factorial';
 import Fibonacci from './pages/fibonacci/fibonacci';
 import reportWebVitals from './reportWebVitals';
@@ -18,7 +18,7 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about_me" element={<AboutMe />} />
-          <Route path="first_app" element={<FirstApp />} />
+          <Route path="shopping_list" element={<ShoppingList />} />
           <Route path="factorial" element={<Factorial />} />
           <Route path="fibonacci" element={<Fibonacci />} />
         </Route>
