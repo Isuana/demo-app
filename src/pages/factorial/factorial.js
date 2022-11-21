@@ -11,8 +11,8 @@ function Factorial() {
       return;
     }
 
-    if (numer < 0) {
-      document.getElementById('result').innerHTML = 'Wartość nie może być poniżej zera!';
+    if (numer <= 0) {
+      document.getElementById('result').innerHTML = 'Wartość nie może być poniżej jeden!';
       return;
     }
 
