@@ -2,7 +2,7 @@ import Factorial from "./factorial";
 import { render, cleanup } from "@testing-library/react";
 
 beforeEach(cleanup);
-
+  
 it('page present correctly', () => {
   render(<Factorial />);
 
