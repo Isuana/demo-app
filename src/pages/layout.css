@@ -7,7 +7,7 @@
 #area_style {
   text-align: center;
   width: 600px;
-  height: 300px;
+  min-height: 300px;
   border-radius: 40px;
   box-shadow: 0 0 25px;
   margin: auto;
