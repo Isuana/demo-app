@@ -18,7 +18,7 @@ function ShoppingList() {
 
   const [products, setProducts] = useState([]);
   const typeSelector = useRef();
-  const fruitNameSelector = useRef();
+  const productNameSelector = useRef();
 
   const productsList = products.map((item) =>
       <li key={item.name}>
@@ -28,11 +28,15 @@ function ShoppingList() {
   );
 
   const addListItem = () => {
-    let fruitType = typeSelector.current.value;
-    let fruitName = fruitNameSelector.current.value;
+    let productType = typeSelector.current.value;
+    let productName = productNameSelector.current.value;
 
-    fruitNameSelector.current.value = "";
-    setProducts(products.concat({'name': fruitName, 'type': fruitType}));
+    if (productName == '') {
+      return
+    }
+
+    productNameSelector.current.value = "";
+    setProducts(products.concat({'name': productName, 'type': productType}));
   }
 
   const removeItem = (item_name) => {
@@ -51,7 +55,7 @@ function ShoppingList() {
         <h3 className='style-head'>Lista zakupów</h3>
         <br />
         <select ref={typeSelector} className='list-option view'>{listItems}</select>
-        <input ref={fruitNameSelector} type='text' className='product view' />
+        <input ref={productNameSelector} type='text' alt='nazwa produktu' className='product view' />
         <input type='button' value='+' className='add-product view' onClick={() => addListItem()} />
         <input type='reset' value='Reset' className='reset-list view' onClick={() => resetList()} />
         <br />
