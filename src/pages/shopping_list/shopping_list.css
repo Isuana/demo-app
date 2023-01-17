@@ -6,6 +6,7 @@
 .list-option {
   float: left;
   margin-left: 30px;
+  margin-right: 10px;
 }
 
 .reset-list {
@@ -24,4 +25,27 @@
 .remove-product {
   margin: 3px 15px;
   display: inline;
+}
+
+@media all and (max-width: 650px) {
+  .list-option {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .product {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .add-product {
+    margin: 0;
+    text-align: left !important;
+  }
+
+  .reset-list {
+    float: none;
+    margin-left: 15px;
+  }
 }

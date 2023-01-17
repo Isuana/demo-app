@@ -31,7 +31,7 @@ function ShoppingList() {
     let productType = typeSelector.current.value;
     let productName = productNameSelector.current.value;
 
-    if (productName == '') {
+    if (productName === '') {
       return
     }
 
@@ -51,9 +51,8 @@ function ShoppingList() {
 
   return (
     <>
+      <h3 className='style-head'>Lista zakupów</h3>
       <div>
-        <h3 className='style-head'>Lista zakupów</h3>
-        <br />
         <select ref={typeSelector} className='list-option view'>{listItems}</select>
         <input ref={productNameSelector} type='text' alt='nazwa produktu' className='product view' />
         <input type='button' value='+' className='add-product view' onClick={() => addListItem()} />
